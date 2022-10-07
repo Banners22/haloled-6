@@ -1,5 +1,5 @@
 let Rotate = 0
-basic.showString("HL6")
+basic.showString("HL7")
 basic.showNumber(6)
 let Pause = 2
 let Max = 50
