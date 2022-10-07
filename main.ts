@@ -1,6 +1,6 @@
 let Rotate = 0
-basic.showString("HL7")
-basic.showNumber(6)
+basic.showString("HL8")
+basic.showNumber(8)
 let Pause = 2
 let Max = 50
 let Brightness = Max
@@ -13,9 +13,11 @@ basic.forever(function () {
         haloDisplay.show()
     }
     basic.pause(20)
-    while (Rotate < 60) {
+    while (Rotate < 30) {
         haloDisplay.setZipLedColor(Rotate, kitronik_halo_hd.colors(ZipLedColors.Red))
+        haloDisplay.setZipLedColor(Rotate + 30, kitronik_halo_hd.colors(ZipLedColors.Red))
         haloDisplay.setZipLedColor(Rotate - 5, kitronik_halo_hd.colors(ZipLedColors.Black))
+        haloDisplay.setZipLedColor(Rotate + 25, kitronik_halo_hd.colors(ZipLedColors.Black))
         haloDisplay.show()
         basic.pause(20)
         Rotate += 1
